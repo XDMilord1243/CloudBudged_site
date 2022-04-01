@@ -31,3 +31,17 @@ function hambHandler(e) {
     body.classList.remove("noscroll");
   }
 
+const play = document.querySelector('.controls');
+const video = document.querySelector('.video');
+const playImg = document.querySelector('.play');
+play.addEventListener('click', playVideo);
+video.addEventListener('click', playVideo);
+function playVideo() {
+  if(video.paused) {
+    video.play()
+    playImg.src = '../img/icon/pause.svg'
+  } else {
+    video.pause()
+    playImg.src = '../img/icon/play.svg'
+  }
+}

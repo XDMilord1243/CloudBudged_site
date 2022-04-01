@@ -1,0 +1,143 @@
+.management__body {
+    display: flex;
+    padding: 0px 0px 50px 0px;
+}
+
+
+.management__text {
+}
+.management__title {
+    max-width: 445px;
+    font-size: 100px;
+
+}
+.management__subtitle {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    
+    max-width: 420px;
+}
+.management__link {
+}
+.management__video {
+    margin-left: 125px;
+    max-width: 445px;
+    width: 100%;
+    border-radius: 15px;
+    
+    padding: 25px 0px 0px;
+    position: relative;
+}
+
+
+.video {
+    max-width: 445px;
+    border-radius: 15px;
+}
+.controls {
+    
+    position: absolute;
+    top: 43%;
+    left: -7%;
+    background-color: $red;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    
+    cursor: pointer;
+
+}
+.controls__play {
+    position: absolute;
+    left: 30%;
+    top: 28%;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .management {
+        display: flex;
+        justify-content: center;
+    }
+    .management__body {
+        flex-direction: column;
+
+    }
+    .management__video {
+        margin-left: 20px;
+    }
+
+}
+
+
+@media (max-width: 580px) {
+    .management {
+        margin-top: -50px;
+    }
+    .management__video {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .video {
+        max-width: 300px;
+        border-radius: 15px;
+    }
+    .controls {
+
+        position: absolute;
+        top: 42%;
+        left: -10%;
+        background-color: $red;
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+    }
+    .management__subtitle > .subtitle{
+        // font-size: 12px;
+    }
+    .management__link {
+    }
+
+}
+@media (max-width: 380px) {
+    
+    .management__video {
+        max-width: 250px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .controls__play {
+        left: 18%;
+        top: 17%;
+    }
+
+    .video {
+        max-width: 250px;
+        border-radius: 15px;
+    }
+    .controls {
+
+        position: absolute;
+        top: 45%;
+        left: -10%;
+        background-color: $red;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+    }
+    .management__title.title {
+        font-size: 28px;
+    }
+}

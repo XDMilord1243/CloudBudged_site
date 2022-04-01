@@ -6,8 +6,8 @@
 	display: flex;
 	justify-content: end;
 }
-.menu__burger-item:not(:last-child){
-	margin: 0px 20px 0px 0px;
+.menu__burger-item li+li {
+	padding: 0px 20px 0px 0px;
 }
 .menu__burger-item a {
 	font-size: 14px;
@@ -148,25 +148,11 @@
 	}
 }
 @media (max-width: 620px) {
-	.header__lang-link {
-		&:before {
-			content: url('../img/icon/america.svg');
-			width: 25px;
-			height: 25px;
-			position: relative;
-			top: 0;
-			left: -15px;
-		}
-		&:after {
-			content: url('../img/icon/down.svg');
-			width: 18px;
-			height: 18px;
-			position: relative;
-			top: 0;
-			left: 15px;
-		}
-	}
+
 }
+
+
+
 .header__right {
 	
 		
@@ -191,6 +177,15 @@
 			position: relative;
 			top: 0;
 			left: 15px;
+		}
+	}
+	@media (max-width: 329px) {
+		.header__lang {
+			display: none;
+		}
+		.header__btn {
+			padding: 6px 20px;
+			margin-left: 20px;
 		}
 	}
 	.header__btn {
