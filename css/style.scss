@@ -1,0 +1,19 @@
+@import '_null.scss';
+@import '_header.scss';
+@import '_fonts.scss';
+@import '_cloudbudget.scss';
+
+$white: #fff;
+$orangeRed: #EE3D1B;
+$black: #000;
+$red: #D52047;
+
+body {
+	font-family: 'Lato';
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0px 20px;
+} 
