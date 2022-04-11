@@ -1,0 +1,42 @@
+.technology {
+}
+
+.technology__title {
+    
+    padding: 60px 0px 50px 0px;
+    text-align: center;
+}
+
+.technology__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.technology__item {
+    position: relative;
+    margin: 50px 0px 0px;
+    span {
+        position: absolute;
+        left: 25%;
+        top: -40%;
+        font-weight: 700;
+        font-size: 100px;
+        color: rgb(16, 16, 16, 0.08);
+    }
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    text-align: center;
+}
+.technology__item-title {
+    
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.technology__item-subtitle {
+    max-width: 190px;
+    margin: 0 auto;
+    font-size: 12px;
+}

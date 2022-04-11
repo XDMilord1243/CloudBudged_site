@@ -39,9 +39,9 @@ video.addEventListener('click', playVideo);
 function playVideo() {
   if(video.paused) {
     video.play()
-    playImg.src = 'img/icon/pause.svg'
+    playImg.src = '../img/icon/pause.svg'
   } else {
     video.pause()
-    playImg.src = 'img/icon/play.svg'
+    playImg.src = '../img/icon/play.svg'
   }
 }
