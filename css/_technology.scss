@@ -1,4 +1,6 @@
 .technology {
+    
+    color: $darkGray;
 }
 
 .technology__title {
@@ -39,4 +41,22 @@
     max-width: 190px;
     margin: 0 auto;
     font-size: 12px;
+}
+
+
+@media (max-width: 1135px) {
+}
+
+@media (max-width: 799px) {
+    .technology__items {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .technology__item {
+        margin: 70px 0px 0px;
+    }
+    
+}
+@media (max-width: 380px) {
+    
 }
